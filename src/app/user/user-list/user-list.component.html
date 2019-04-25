@@ -1,0 +1,19 @@
+<table class="table table-responsive">
+    <tr>
+      <th>Name</th>
+      <th>Prefix</th>
+      <th>Email</th>
+      <th>Position</th>
+      <th>Gender</th>
+    </tr>
+
+    <tbody>
+      <tr *ngFor="let user of filteredUsers | filter: searchByKeyword">
+        <td>{{ user.name }}</td>
+        <td>{{ user.prefix }}</td>
+        <td>{{ user.email }}</td>
+        <td>{{ user.position }}</td>
+        <td>{{ user.gender }}</td>
+      </tr>
+    </tbody>
+  </table>
